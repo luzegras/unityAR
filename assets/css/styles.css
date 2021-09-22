@@ -20,6 +20,12 @@
 }
 
 @media screen and (min-width: 768px){
+  #header-background{
+    position: fixed;
+    background-color: transparent;
+    margin-top: 0px;
+    width: 100%;
+  }
   :root{
     --big-font-size: 5rem;
     --normal-font-size: 1rem;
@@ -91,6 +97,17 @@ img{
 }
 
 @media screen and (max-width: 768px){
+
+
+  #header-background{
+    position: fixed;
+    background-color: transparent;
+  margin-top: 0px;
+    width: 100%;
+  
+  
+  }
+
 
   .tranefooter{
     display:block;
@@ -196,6 +213,13 @@ img{
 /* ===== MEDIA QUERIES =====*/
 @media screen and (min-width: 768px){
 
+  #header-background{
+    position: fixed;
+    background-color: transparent;
+    margin-top: 0px;
+    width: 100%;
+  }
+
   body{
     margin: 0;
   }
@@ -224,9 +248,11 @@ img{
     row-gap: 0;
     align-items: center;
     justify-content: center;
+    padding-top: 100px;
   }
   
   .home__img{
+    
     order: 1;
     width: 375px;
     height: 289px;
@@ -238,6 +264,13 @@ img{
 }
 
 @media screen and (min-width: 1024px){
+
+  #header-background{
+    position: fixed;
+    background-color: transparent;
+    margin-top: 0px;
+    width: 100%;
+  }
 
   .tranefooter{
     display:block;
@@ -277,3 +310,93 @@ text-align: left;
 font-size: 14px;
 
 }
+
+#header-background{
+  position: fixed;
+  background-color: transparent;
+  margin-top: 70px;
+  width: 100%;
+
+
+}
+
+
+.slider {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  margin-right: 10px;
+}
+
+.slides {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.slide {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 65px;
+  height: 65px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.226);
+  margin-right: 10px;
+  border-radius: 10px;
+  border: none;
+  display: flex;
+}
+
+.slide.selected {
+  border: 2px solid #ff3907;
+}
+
+.slide:focus {
+  outline: none;
+}
+
+.slide:focus-visible {
+  outline: 1px solid #ff3907;
+}
+
+@media screen and (orientation:portrait) {
+  #header-background{
+    position: fixed;
+    background-color: transparent;
+    margin-top: 0px;
+    width: 100%;
+  }
+
+  .home__img{
+    
+   margin-top: 50px;
+    width: 375px;
+    height: 289px;
+    margin-bottom: 50px;
+  }
+
+ }
+
+@media screen and (orientation:landscape) {
+
+  .home__img{
+    margin-top: 10px;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 20%, rgba(251,251,251,1) 70%, rgba(255,255,255,0) 100%);
+    z-index: 10;
+  }
+
+  
+
+ }
