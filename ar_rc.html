@@ -62,7 +62,7 @@
 
         <script type="module">
             const modelViewer = document.querySelector("model-viewer");
-          
+            modelViewer.src = "assets/media/3d/chiller.glb";
             window.switchSrc = (element, name) => {
               const base = "assets/media/3d/" + name;
               modelViewer.src = base + '.glb';
